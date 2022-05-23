@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: calc(100vh - 50px);
+  background: url(/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+li {
+  float: left;
+  width: 20%;
+  height: 100%;
+  list-style: none;
+  mix-blend-mode: hue;
+}
+
+ul:hover li{
+    opacity: 0;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+li:nth-child(1) {
+  background: #ff5500;
+}
+li:nth-child(2) {
+  background: #5500ff;
+}
+li:nth-child(3) {
+  background: #00b3b3;
+}
+
+li:nth-child(4) {
+  background: #44cc00;
+}
+li:nth-child(5) {
+  background: #e645a0;
+}
+
+/*  HOVER DEL MENU  */
+
+li:nth-child(1):hover {
+  box-shadow: 0 0 0 1500px #ff5500;
+}
+li:nth-child(2):hover {
+  box-shadow: 0 0 0 1500px #5500ff;
+}
+li:nth-child(3):hover {
+  box-shadow: 0 0 0 1500px#00B3B3;
+}
+
+li:nth-child(4):hover {
+  box-shadow: 0 0 0 1500px#44cc00;
+}
+li:nth-child(5):hover {
+  box-shadow: 0 0 0 1500px#e645a0;
+}
